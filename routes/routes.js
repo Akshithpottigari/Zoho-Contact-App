@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // Db connection
 
-const connection_url = `mongodb+srv://akshith:${SECRET_KEY}@cluster0.eib1q.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
+const connection_url = `mongodb+srv://<username>:<password>@cluster0.eib1q.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 
 mongoose.connect(connection_url, {
   useNewUrlParser: true,
