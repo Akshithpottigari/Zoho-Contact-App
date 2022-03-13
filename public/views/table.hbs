@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      tr {
+background-color: lightgray;
+}
+    </style>
+<a href="/">Go back to index</a>
+<h1>All contacts</h1>
+    <table
+      style="
+    margin: 0 auto;
+    width: 100%;
+"
+    >
+      <tr>
+        <th>Name</th>
+        <th>phno</th>
+        <th>email</th>
+      </tr>
+      <tbody>
+        {{#data}}
+          <tr>
+            <td>{{name}}</td>
+            <td>{{email}}</td>
+            <td>{{phno}}</td>
+          </tr>
+        {{/data}}
+      </tbody>
+    </table>
+  </body>
+</html>
